@@ -7,7 +7,7 @@ also Uh have to install Termux:Api from F-Droid
 
 apt update;
 apt upgrade -y;
-apt install git -y;
+apt install git wget -y;
 git clone https://github.com/Qzen-roi/TermuxGui;
 cd TermuxGui;
 chmod +x termux-gui;
