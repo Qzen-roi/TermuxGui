@@ -6,7 +6,7 @@ clear
    printf "\n"
    sleep 5 
   printf "\n"
-apt update ; apt upgrade -y;apt-get update --fix-missing;apt-get install x11-repo -y ;apt-get install tigervnc aterm  xfce4 -y ;
+termux-setup-storage && apt update ; apt upgrade -y;apt-get update --fix-missing;apt-get install x11-repo -y ;apt-get install tigervnc aterm  xfce4 -y ;
   printf "\n"
 cd $Home;cd ../usr/bin && echo "vncserver -geometry 1508x720" > vncstart ; echo "vncserver -kill :1" > vncstop ; chmod +x * ; cd ~ ;
   printf "${green}[+]Now you have to launch vncserver type vncstart to start the vncserver \n (1) vncstart  #  vncstart for starting vncserver\n(2)vncstop #  vncstop for stoping the vncserver[+]${reset}" 
@@ -14,5 +14,5 @@ cd $Home;cd ../usr/bin && echo "vncserver -geometry 1508x720" > vncstart ; echo 
   printf "      Set password for vncserver and download vncviewer or nethunter kex from playstore"
   printf "\n"
   sleep 4
-cd $Home; mkdir .vnc; cd .vnc ;echo "xfce4-session &" >> xstartup ;echo "twm &" >> xstartup;chmod +x xstartup; cd ~ ;
+cd $Home;mkdir .vnc && cd TermuxGui && cp xstartup /data/data/com.termux/files/home/.vnc . ; cd ~ ;
 
