@@ -14,5 +14,5 @@ cd $Home;cd ../usr/bin && echo "vncserver -geometry 1508x720" > vncstart ; echo 
   printf "      Set password for vncserver and download vncviewer or nethunter kex from playstore"
   printf "\n"
   sleep 4
-cd $Home/.vnc && echo "xfce4-session &" >> xstartup ;echo "twm &" >> xstartup;chmod +x xstartup; cd ~ ;
+cd $Home; mkdir .vnc && cd .vnc && echo "xfce4-session &" >> xstartup ;echo "twm &" >> xstartup;chmod +x xstartup; cd ~ ;
 
