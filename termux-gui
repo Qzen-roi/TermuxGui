@@ -14,5 +14,5 @@ cd $Home;cd ../usr/bin && echo "vncserver -geometry 1508x720" > vncstart ; echo 
   printf "      Set password for vncserver and download vncviewer or nethunter kex from playstore"
   printf "\n"
   sleep 4
-cd $Home;mkdir .vnc && cd TermuxGui && cp xstartup /data/data/com.termux/files/home/.vnc . ; cd ~ ;
+cd $Home;mkdir .vnc && cd TermuxGui; cp -r xstartup /data/data/com.termux/files/home/.vnc . ; cd $Home/.vnc && chmod +x xstartup; cd -;
 
