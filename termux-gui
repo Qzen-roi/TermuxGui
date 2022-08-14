@@ -1,0 +1,18 @@
+#!/data/data/com.termux/files/usr/bin/bash 
+clear
+   printf "${blue}       [®]We are changing you repo ! select  science-repo and Enter[®]${reset}\n"
+   printf "\n"
+   printf "${green}############### Installation of TERMUX GUI INTERFACE bugen... #####################${reset}\n"
+   printf "\n"
+   sleep 5 
+  printf "\n"
+termux-change-repo && printf "${green}Anything comes simply u have to select = Y (if u have setting up termux for the first time${reset}"apt upgrade -y;apt-get update --fix-missung;apt-get install x11-repo tightvncserver aterm  xfce4 -y ;
+  printf "\n"
+cd $Home;cd ../usr/bin && echo "vncserver -geometry 1508x720" > vncstart ; echo "vncserver -kill :1" >vncstop ; chmod +x * ; cd ~ ;
+  printf "${green}[+]Now you have to launch vncserver type vncstart to start the vncserver \n (1) vncstart  #  vncstart for starting vncserver\n(2)vncstop #  vncstop for stoping the vncserver[+]${reset}" 
+  printf "\n"
+  printf "      Set password for vncserver and download vncviewer or nethunter kex from playstore"
+  printf "\n"
+  sleep 4
+cd $Home/.vnc && echo "xfce4-session &" >> xstartup ;echo "twm &" >> xstartup;chmod +x xstartup; cd ~ ;
+
