@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash 
 clear
-   printf "${blue}       [®]We are changing you repo ! select  All Mirrors and Enter[®]${reset}\n"
+   ##printf "${blue}       [®]We are changing you repo ! select  All Mirrors and Enter[®]${reset}\n"
    printf "\n"
-  ## printf "${green}############### Installation of TERMUX GUI INTERFACE bugen... #####################${reset}\n"
+   printf "${green}############### Installation of TERMUX GUI INTERFACE bugen... #####################${reset}\n"
    printf "\n"
    sleep 5 
   printf "\n"
