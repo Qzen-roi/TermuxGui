@@ -6,9 +6,9 @@ clear
    printf "\n"
    sleep 5 
   printf "\n"
-termux-change-repo && printf "${green}Anything comes simply u have to select = Y (if u have setting up termux for the first time${reset}"apt upgrade -y;apt-get update --fix-missing;apt-get install x11-repo tightvncserver aterm  xfce4 -y ;
+termux-change-repo && printf "${green}Anything comes simply u have to select = Y (if u have setting up termux for the first time${reset}" ;apt upgrade -y;apt-get update --fix-missing;apt-get install x11-repo tightvncserver aterm  xfce4 -y ;
   printf "\n"
-cd $Home;cd ../usr/bin && echo "vncserver -geometry 1508x720" > vncstart ; echo "vncserver -kill :1" >vncstop ; chmod +x * ; cd ~ ;
+cd $Home;cd ../usr/bin && echo "vncserver -geometry 1508x720" > vncstart ; echo "vncserver -kill :1" > vncstop ; chmod +x * ; cd ~ ;
   printf "${green}[+]Now you have to launch vncserver type vncstart to start the vncserver \n (1) vncstart  #  vncstart for starting vncserver\n(2)vncstop #  vncstop for stoping the vncserver[+]${reset}" 
   printf "\n"
   printf "      Set password for vncserver and download vncviewer or nethunter kex from playstore"
